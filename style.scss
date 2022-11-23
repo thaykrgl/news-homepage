@@ -1,0 +1,228 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.row{
+    @media(max-width:576px)
+    {
+     margin-inline: 0 !important;
+    }
+}
+
+.br-sm{
+    @media(max-width:425px)
+    {
+     display: none;
+    }
+}
+
+.br-lg{
+    @media(max-width:1200px) and (min-width: 768px)
+    {
+     display: none;
+    }
+}
+
+.news-homepage-main {
+    font-family: 'Inter', sans-serif;
+    padding-bottom: 50px;
+
+    .container {
+
+        header {
+            margin-top: clamp(1.25rem, 6vw, 3rem);
+            margin-bottom: clamp(1rem, 4.5vw, 2rem);
+
+            nav {
+                .logo{
+                    img{
+                        width: clamp(30px, 4.4vw, 65px);
+                    }
+                }
+                .links {
+                    ul {
+                        gap: clamp(0.8rem, 2.2vw, 2rem);
+
+                        li {
+                            list-style-type: none;
+
+                            a {
+                                color: hsl(236, 13%, 42%);
+                                font-size: clamp(10px, 1.1vw, 1rem);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .main {
+            margin-bottom: clamp(1rem, 3.3vw, 3rem);
+
+            .content {
+                @media(max-width:767px)
+                {
+                 padding-inline: 0 !important;
+                }
+                .hero-content {
+                    div{
+                        @media(max-width:576px)
+                        {
+                         padding-inline: 0 !important;
+                        }
+                    }
+                    @media(max-width:767px)
+                    {
+                     margin-bottom: clamp(2rem, 5.5vw, 5rem);
+                    }
+                    h2 {
+                        font-size: clamp(1.2rem, 3.3vw, 3rem);
+                        font-weight: 800;
+                        margin-bottom: 0;
+                    }
+
+                    p {
+                        font-size: clamp(0.5rem, 1.2vw, 15px);
+                        color: hsl(236, 13%, 42%);
+                    }
+
+                    .read-more {
+                        position: absolute;
+                        bottom: 0%;
+
+                        @media(max-width:992px)
+                        {
+                         bottom: -10%;
+                        }
+
+                        @media(max-width:767px)
+                        {
+                         bottom: 0%;
+                        }
+
+                        @media(max-width:576px)
+                        {
+                         bottom: -15%;
+                        }
+
+                        a {
+                            color: #fff;
+                            background: hsl(5, 85%, 63%);
+                            letter-spacing: clamp(2px, 0.35vw, 4px);
+                            font-size: clamp(0.5rem, 1vw, 14px);
+                            padding-block: clamp(5px, 0.9vw, 12px);
+                            padding-inline: clamp(12px, 2.2vw, 30px);
+                            font-weight: 700;
+                        }
+                    }
+                }
+            }
+
+            .aside {
+                background: hsl(240, 100%, 5%);
+
+                .container{
+                    @media(max-width:767px)
+                    {
+                     padding-inline: 0;
+                    }
+                }
+
+                h3 {
+                    margin-block: clamp(0.7rem, 2.2vw, 2rem);
+                    color: hsl(35, 77%, 62%);
+                    font-size: clamp(1rem, 2.75vw, 2.5rem);
+                    font-weight: 700;
+                    letter-spacing: 2px;
+                }
+
+                .content {
+
+                    &:last-child {
+                        border-bottom: none;
+                    }
+
+                    padding-bottom: clamp(0.6rem, 1.3vw, 1.5rem);
+                    margin-bottom: clamp(0.6rem, 1.65vw, 1.5rem);
+                    border-bottom: 1px solid hsl(236, 13%, 42%);
+
+                    h5 {
+                        color: #fff;
+                        font-weight: 700;
+                        margin-bottom: clamp(4px, 0.8vw, 10px);
+                        font-size: clamp(12px, 1.5vw, 20px);
+                    }
+
+                    p {
+                        margin: 0;
+                        color: hsl(236, 13%, 42%);
+                        font-size: clamp(10px, 1.1vw, 16px);
+                    }
+                }
+            }
+        }
+
+        .article {
+
+            .row{
+                @media(max-width:767px)
+                {
+                 gap: 1rem;
+                }
+            }
+            .suggested-content {
+                @media(max-width:767px)
+                {
+                    padding-inline: 0 !important;
+                }
+
+                &:last-child {
+                    padding-right: 0px !important;
+                }
+
+                gap: clamp(0.6rem, 1.65vw, 1.5rem);
+
+                .article-image {
+                    img {
+                        width: clamp(40px, 7vw, 100px);
+                        height: clamp(52px, 9vw, 130px);
+                        min-height: 100% !important;
+                    }
+                }
+
+                .article-content {
+                    .number {
+                        font-weight: 700;
+                        font-size: clamp(0.8rem, 2.2vw, 2rem);
+                        color: hsl(233, 8%, 79%);
+                        margin-bottom: clamp(0.2rem, 0.55vw, 0.5rem);
+                    }
+
+                    .heading {
+                        font-size: clamp(0.5rem, 1.3vw, 1.2rem);
+                        font-weight: 800;
+                    }
+
+                    .text {
+                        color: hsl(236deg, 13%, 42%);
+                        font-size: clamp(10px, 1.1vw, 1rem);
+                        margin: 0;
+                    }
+                }
+            }
+        }
+
+    }
+
+}
