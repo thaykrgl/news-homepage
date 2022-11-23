@@ -24,11 +24,11 @@ Users should be able to:
 
 #### Desktop View
 
-<img src="./images/news-homepage-desktop" alt="">
+<img src="./images/news-homepage-desktop.png" alt="">
 
 #### Mobile View
 
-<img src="./images/news-homepage-mobile" alt="">
+<img src="./images/news-homepage-mobile.png" alt="">
 
 ### Links
 
