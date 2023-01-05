@@ -60,6 +60,7 @@ a {
                             a {
                                 color: hsl(236, 13%, 42%);
                                 font-size: clamp(10px, 1.1vw, 1rem);
+                                text-decoration: none;
                             }
                         }
                     }
@@ -124,6 +125,7 @@ a {
                             padding-block: clamp(5px, 0.9vw, 12px);
                             padding-inline: clamp(12px, 2.2vw, 30px);
                             font-weight: 700;
+                            text-decoration: none;
                         }
                     }
                 }
