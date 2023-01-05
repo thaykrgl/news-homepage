@@ -33,7 +33,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Frontend Mentor](https://www.frontendmentor.io/profile/thaykrgl)
-- Live Site URL: [Netlify](https://interactive-card-details-fm.netlify.app/)
+- Live Site URL: [Netlify](https://newshomepage-frontendmentor.netlify.app/)
 
 ### Built with
 
